@@ -24,7 +24,7 @@ public class QuizzActivity extends AppCompatActivity {
 
     }
 
-    Storage storage=new StorageSharedPreference();
+    
     public void firstAnswer(View view)
     {
         if( view.getId()==R.id.answer_nile)
@@ -60,7 +60,7 @@ public class QuizzActivity extends AppCompatActivity {
 
    }
     public void calculateButton(View view)
-    {
+    {Storage storage=new StorageSharedPreference();
         String d=storage.getSt(this, "username");
         int  e=a+b+c;
         storage.saveIn(this, d, e);
