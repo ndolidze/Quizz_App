@@ -36,21 +36,13 @@ public class ResultActivity extends AppCompatActivity {
 
 
     }
-    public void tryAgain(View view)
+      public void tryAgain(View view)
     {
-        Storage storage=new StorageSharedPreference();
-        storage.saveIn(this, "1Point",0);
-        storage.saveIn(this, "2Point", 0);
-        storage.saveIn(this, "3Point",0);
         Intent intent=new Intent(this, QuizzActivity.class);
         startActivity(intent);
     }
     public void logOut(View view)
     {
-        Storage storage=new StorageSharedPreference();
-        storage.saveIn(this, "1Point",0);
-        storage.saveIn(this, "2Point", 0);
-        storage.saveIn(this, "3Point",0);
         Intent intent = new Intent(this, StartActivity.class);
         startActivity(intent);
     }
