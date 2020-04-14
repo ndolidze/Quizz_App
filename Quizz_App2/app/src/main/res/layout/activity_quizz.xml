@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1)What's the name of the longest river in the world?"
+                android:textColor="@android:color/black"
+                android:textSize="30dp"></TextView>
+            <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/answer_nile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="firstAnswer"
+                        android:text="Nile"
+                        android:textSize="30dp" />
+
+                    <RadioButton
+                        android:id="@+id/answer_amazon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="firstAnswer"
+                        android:text="Amazon river"
+                        android:textSize="30dp" />
+
+                    <RadioButton
+                        android:id="@+id/answer_mississippi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="firstAnswer"
+                        android:text="Mississippi"
+                        android:textSize="30dp" />
+
+                    <RadioButton
+                        android:id="@+id/answer_yangtze"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="firstAnswer"
+                        android:text="Yangtze"
+                        android:textSize="30dp" />
+
+
+                </RadioGroup>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="2)What is the largest city in the world in terms of population?"
+                android:textColor="@android:color/black"
+                android:textSize="30dp"></TextView>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/answer_jakarta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="secondAnswer"
+                    android:text="Jakarta"
+                    android:textSize="30dp" />
+
+                <RadioButton
+                    android:id="@+id/answer_delhi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="secondAnswer"
+                    android:text="Delhi"
+                    android:textSize="30dp" />
+
+                <RadioButton
+                    android:id="@+id/answer_tokyo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="secondAnswer"
+                    android:text="Tokyo"
+                    android:textSize="30dp" />
+
+                <RadioButton
+                    android:id="@+id/answer_seoul"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="secondAnswer"
+                    android:text="Seoul"
+                    android:textSize="30dp" />
+            </RadioGroup>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="3)What Is The Capital Of Chile?"
+                android:textColor="@android:color/black"
+                android:textSize="30dp"></TextView>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/answer_Puente_Alto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="thirdAnswer"
+                    android:text="Puente Alto"
+                    android:textSize="30dp" />
+
+                <RadioButton
+                    android:id="@+id/answer_Concepción"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="thirdAnswer"
+                    android:text="Concepción"
+                    android:textSize="30dp" />
+
+                <RadioButton
+                    android:id="@+id/answer_Valparaiso"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="thirdAnswer"
+                    android:text="Valparaiso"
+                    android:textSize="30dp" />
+
+                <RadioButton
+                    android:id="@+id/answer_santiago"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="thirdAnswer"
+                    android:text="Santiago"
+                    android:textSize="30dp" />
+            </RadioGroup>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:background="@android:color/holo_blue_dark"
+                android:onClick="calculateButton"
+                android:text="Calculate"
+                android:textSize="30dp"></Button>
+        </LinearLayout>
+    </ScrollView>
+    </LinearLayout>
