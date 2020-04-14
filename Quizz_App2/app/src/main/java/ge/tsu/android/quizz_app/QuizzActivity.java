@@ -11,6 +11,9 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class QuizzActivity extends AppCompatActivity {
+    public static int a=0;
+    public static int b=0;
+    public static int c=0;
 
 
     @Override
@@ -26,42 +29,44 @@ public class QuizzActivity extends AppCompatActivity {
     {
         if( view.getId()==R.id.answer_nile)
         {
-           storage.saveIn(this, "1Point", 1);
+           a++;
         }
-        else
-            {
-           storage.saveIn(this, "1Point", 0);
-            }
+        else{
+            a=0;
+        }
+
     }
     public void secondAnswer(View view)
     {
         if (view.getId() == R.id.answer_tokyo)
         {
-               storage.saveIn(this, "2Point", 1);
+             b++;
         }
-        else
-            {
-               storage.saveIn(this, "2Point", 0);
-            }
+        else{
+            b=0;
+        }
+
     }
     public void thirdAnswer(View view)
     {
 
        if(view.getId()== R.id.answer_santiago )
           {
-              storage.saveIn(this, "3Point", 1);
+             c++;
           }
-       else
-           {
-           storage.saveIn(this, "3Point", 0);
+       else{
+           c=0;
+       }
 
-           }
    }
     public void calculateButton(View view)
     {
         String d=storage.getSt(this, "username");
-        int  a=storage.getin(this, "1Point")+storage.getin(this, "2Point")+storage.getin(this, "3Point");
-        storage.saveIn(this, d, a);
+        int  e=a+b+c;
+        storage.saveIn(this, d, e);
+        a=0;
+        b=0;
+        c=0;
         Intent intent=new Intent(this, ResultActivity.class );
         startActivity(intent);
         finish();
